@@ -5,8 +5,7 @@
     // DATABASE CONNECTION
    
         $connect = mysqli_connect("localhost","root","","crud") or die("Database Connection Faield!");
-        $sql = "SELECT * FROM studentclass";
-        $result = mysqli_query($connect , $sql) or die("Query Field!");
+
              
 
 
@@ -28,6 +27,10 @@
 
                 <option value="" selected disabled>Select Class</option>
                 <?php 
+                    $sql = "SELECT * FROM studentclass";
+                    $result = mysqli_query($connect , $sql) or die("Query Field!");
+                    
+                    // Select class loop
                     while($row = mysqli_fetch_assoc($result)){
                 ?>
                     <option value="<?php echo $row["c_code"]?>"><?php echo $row["c_name"]?></option>
