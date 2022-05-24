@@ -15,7 +15,7 @@ include 'header.php';
 
         <thead>
             <th>#</th>
-            <th>Id</th>
+            <!-- <th>Id</th> -->
             <th>Name</th>
             <th>Address</th>
             <th>Class</th>
@@ -32,7 +32,7 @@ include 'header.php';
 
             <tr>
                 <td><?php echo $sl; ?></td>
-                <td><?php echo $row['sid'];?></td>
+                <!-- <td><?php echo $row['sid'];?></td> -->
                 <td><?php echo $row['sname'];?></td>
                 <td><?php echo $row['saddress'];?></td>
                 <td><?php echo $row['c_name'];?></td>

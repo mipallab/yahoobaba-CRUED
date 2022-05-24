@@ -3,10 +3,7 @@
     include 'header.php'; 
 
     // DATABASE CONNECTION
-   
-        $connect = mysqli_connect("localhost","root","","crud") or die("Database Connection Faield!");
-
-             
+    $connect = mysqli_connect("localhost","root","","crud") or die("Database Connection Faield!");
 
 
 ?>
