@@ -14,6 +14,7 @@ include 'header.php';
         ?>
 
         <thead>
+            <th>#</th>
             <th>Id</th>
             <th>Name</th>
             <th>Address</th>
@@ -24,10 +25,13 @@ include 'header.php';
         <tbody>
 
             <?php
+                $sl = 0;
                 while($row = mysqli_fetch_assoc($result)) {
+                $sl++;
             ?>
 
             <tr>
+                <td><?php echo $sl; ?></td>
                 <td><?php echo $row['sid'];?></td>
                 <td><?php echo $row['sname'];?></td>
                 <td><?php echo $row['saddress'];?></td>
@@ -35,7 +39,7 @@ include 'header.php';
                 <td><?php echo $row['sphone'];?></td>
                 <td>
                     <a href='edit.php'>Edit</a>
-                    <a href='delete-inline.php'>Delete</a>
+                    <a href='delete.php'>Delete</a>
                 </td>
             </tr>
             <?php
