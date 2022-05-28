@@ -15,7 +15,7 @@
 
         <thead>
             <th>#</th>
-            <!-- <th>Id</th> -->
+            <th>Id</th>
             <th>Name</th>
             <th>Address</th>
             <th>Class</th>
@@ -32,14 +32,14 @@
 
             <tr>
                 <td><?php echo $sl; ?></td>
-                <!-- <td><?php echo $row['sid'];?></td> -->
+                <td><?php echo $row['sid'];?></td> 
                 <td><?php echo $row['sname'];?></td>
                 <td><?php echo $row['saddress'];?></td>
                 <td><?php echo $row['c_name'];?></td>
                 <td><?php echo $row['sphone'];?></td>
                 <td>
                     <a href='edit.php?id=<?php echo $row['sid'];?>'>Edit</a>
-                    <a href='delete.php'>Delete</a>
+                    <a href='delete-inline.php?id=<?php echo $row['sid'];?>'>Delete</a>
                 </td>
             </tr>
             <?php
