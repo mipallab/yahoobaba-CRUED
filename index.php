@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+    include 'header.php';
 ?>
 <div id="main-content">
     <h2>All Records</h2>
@@ -38,7 +38,7 @@ include 'header.php';
                 <td><?php echo $row['c_name'];?></td>
                 <td><?php echo $row['sphone'];?></td>
                 <td>
-                    <a href='edit.php'>Edit</a>
+                    <a href='edit.php?id=<?php echo $row['sid'];?>'>Edit</a>
                     <a href='delete.php'>Delete</a>
                 </td>
             </tr>

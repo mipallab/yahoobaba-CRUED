@@ -14,4 +14,7 @@
 	header("location: http://localhost/website/yahoobaba/crud/");
 
 
+    mysqli_close($connect);
+
+
 ?>
